@@ -1,0 +1,15 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "Simple Elm app",
+  "main": "src/js/crud.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}

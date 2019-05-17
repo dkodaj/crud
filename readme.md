@@ -6,7 +6,7 @@ A toy Elm app that makes requests to a node.js server. It includes basic routing
 $ git clone git@github.com:dkodaj/crud.git
 $ cd crud
 $ npm install
-$ node crud.js
+$ node src/backend/crud.js
 ```
 
 Then navigate to localhost:3000.

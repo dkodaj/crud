@@ -1,4 +1,4 @@
-module Modules.Model exposing (..)
+module Model exposing (..)
 
 import Browser exposing (UrlRequest(..))
 import Browser.Navigation exposing (Key)

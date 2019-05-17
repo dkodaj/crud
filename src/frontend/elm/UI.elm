@@ -1,12 +1,12 @@
-module Modules.UI exposing (..)
+module UI exposing (..)
 
 import Char
 import Html exposing (Html, a, br, div, img, input, label, nav, node, p, section, span, table, tbody, td, text, th, thead, tr)
 import Html.Attributes exposing (class, height, href, src, style, type_, value)
 import Html.Events exposing (onClick, onInput)
 import List exposing (map)
-import Modules.Model exposing (..)
-import Modules.Request exposing (create, delete, read, updateDB)
+import Model exposing (..)
+import Request exposing (create, delete, read, updateDB)
 import String
 
 {-
@@ -206,7 +206,7 @@ navBarBrand model =
     div [ class "navbar-brand" ]
         [ a
             [ class "navbar-item", href "https://guide.elm-lang.org/" ]
-            [ img [ src "elmlogo.png", height 28 ] [] ]
+            [ img [ src "assets/elmlogo.png", height 28 ] [] ]
         , div
             [ class burgerClass, onClick ToggleMobileNav ]
             spans
@@ -233,15 +233,9 @@ navBarItem model pageID =
 
 
 --non-breaking space
-
-
 nbsp : String
 nbsp =
-    String.fromChar <| Char.fromCode 160
-
-
-
---decimal Unicode
+    String.fromChar <| Char.fromCode 160 --decimal Unicode
 
 
 page : Model -> Html Msg

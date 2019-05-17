@@ -1,18 +1,17 @@
 
-var express = require('express')
-var bodyParser = require('body-parser')
+const bodyParser = require('body-parser')
+const express = require('express')
+const path = require('path')
+
 app = express()
 app.use(bodyParser.json())
 
-//pampalini
-// putyumutyu
-//putyumutyu2
 // file server
-app.use(express.static(__dirname + '/public'))
+app.use(express.static(path.resolve('src/frontend')));
 
 //serve Elm app
 app.get("/", (req,res) => {
-    res.sendFile(__dirname + '/public/index.html');
+    res.sendFile(path.resolve('src/frontend/index.html'));
 });
 // Note that navigating to "localhost:3000/b" returns a "Cannot GET /b" error.
 // But navigating to Menu_B within the app takes you to that address.

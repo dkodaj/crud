@@ -1,9 +1,9 @@
-module Modules.Serialize exposing (..)
+module Serialize exposing (..)
 
 import Json.Decode as Dec exposing (Decoder, field)
 import Json.Encode as Enc exposing (Value, object)
 import List exposing (map)
-import Modules.Model exposing (Data)
+import Model exposing (Data)
 
 
 decodeData : Decoder Data

@@ -1,9 +1,9 @@
-module Modules.Request exposing (..)
+module Request exposing (..)
 
 import Http exposing (jsonBody, post, send)
 import Json.Decode as Dec
-import Modules.Model exposing (Data, Msg(..), emptyForm)
-import Modules.Serialize exposing (decodeJson, encodeData)
+import Model exposing (Data, Msg(..), emptyForm)
+import Serialize exposing (decodeJson, encodeData)
 
 
 create : Data -> Cmd Msg

@@ -1,8 +1,8 @@
 {
   "name": "crud",
   "version": "1.0.0",
-  "description": "Simple Elm app",
-  "main": "src/js/crud.js",
+  "description": "Elm crud demo",
+  "main": "src/backend/crud.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
